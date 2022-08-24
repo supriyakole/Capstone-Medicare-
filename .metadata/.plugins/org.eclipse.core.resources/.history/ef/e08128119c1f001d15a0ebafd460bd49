@@ -1,0 +1,194 @@
+package healthcareDomain2;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class MEDICARE {
+	
+	WebDriver driver = new ChromeDriver();
+	@BeforeMethod
+public void openBrowser() throws InterruptedException
+	
+	{ 
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		 driver.get("http://localhost:8085/medicare/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+	
+	}
+/*	@Test
+	public void Medicine() throws InterruptedException {
+	
+	WebElement ViewBtn = driver.findElement(By.xpath("//*[@id=\"listProducts\"]")); 
+	ViewBtn.click();
+	
+	WebElement AddToCart = driver.findElement(By.xpath("//*[@href='/medicare/cart/add/1/product']"));
+	AddToCart.click();
+	
+    WebElement RegisterHere = driver.findElement(By.xpath("//*[@href='/medicare/membership']"));
+    RegisterHere.click();
+    
+    WebElement FirstName = driver.findElement(By.xpath("//*[@id='firstName']"));
+    FirstName.sendKeys("xyz");
+    
+    
+    WebElement LastName = driver.findElement(By.xpath("//*[@id='lastName']"));
+    LastName.sendKeys("pqr");
+    
+    WebElement EmailID = driver.findElement(By.xpath("//*[@id='email']"));
+    EmailID.sendKeys("pqr@xyz.com");
+    
+    WebElement ContactNum = driver.findElement(By.xpath("//*[@id='contactNumber']"));
+    ContactNum.sendKeys("0123456789");
+    
+    WebElement Password = driver.findElement(By.xpath("//*[@id='password']"));
+    Password.sendKeys("xyzabc");
+    
+    WebElement ConfirmPassword = driver.findElement(By.xpath("//*[@id='confirmPassword']"));
+    ConfirmPassword.sendKeys("xyzabc");
+    
+    WebElement UserBtn = driver.findElement(By.xpath("//*[@class='radio-inline']"));
+    UserBtn.click();
+    
+    WebElement BillingBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+    BillingBtn.click();
+    
+    Thread.sleep(5000);
+   
+    WebElement Address1  = driver.findElement(By.xpath("//input[@id='addressLineOne']"));
+    Address1.sendKeys("SHARMILLA RESIDENCY,THANE");
+    
+    WebElement Address2 = driver.findElement(By.xpath("//input[@id='addressLineTwo']"));
+    Address2.sendKeys("SHARMILLA RESIDENCY,THANE");
+    
+    WebElement City = driver.findElement(By.xpath("//input[@id='city']"));
+    City.sendKeys("THANE");
+    
+    WebElement PostalCode = driver.findElement(By.xpath("//input[@id='postalCode']"));
+    PostalCode.sendKeys("416315");
+    
+    WebElement State = driver.findElement(By.xpath("//input[@id='state']"));
+    State.sendKeys("MAHARASHTRA");
+    
+    WebElement Country = driver.findElement(By.xpath("//input[@id='country']"));
+    Country.sendKeys("INDIA");
+    
+    Thread.sleep(5000);
+    
+    WebElement NextBtn = driver.findElement(By.xpath("//button[@name='_eventId_confirm']"));
+    NextBtn.click();
+     
+    Thread.sleep(5000);
+    
+    WebElement ConfirmBtn = driver.findElement(By.xpath("//a[@class='btn btn-lg btn-primary']"));
+    ConfirmBtn.click();
+    
+    System.out.println("succeessfully Registerd");
+    Thread.sleep(5000);
+    
+   WebElement LoginHere = driver.findElement(By.xpath("//a[@class='btn btn-lg btn-success']"));
+    LoginHere.click();
+    Thread.sleep(5000);
+	}*/
+	
+@Test
+public void Login() throws InterruptedException { 
+	
+	 WebElement Login = driver.findElement(By.xpath("//*[@id='login']"));
+	 Login.click();
+	
+	//*[@id="login"]
+	
+	
+    WebElement USERNAME = driver.findElement(By.xpath("//input[@class='form-control']"));
+    USERNAME.sendKeys("pqr@xyz.com");
+    
+    WebElement PASSWORD = driver.findElement(By.xpath("//input[@type='password']"));
+    PASSWORD.sendKeys("xyzabc");
+    
+    Thread.sleep(5000);
+      
+    WebElement LoginBtn = driver.findElement(By.xpath("//input[@value='Login']"));
+    LoginBtn.click();
+
+    WebElement ViewBtn = driver.findElement(By.xpath("//*[@id=\"listProducts\"]")); 
+	ViewBtn.click();
+	
+   //PARACETAMOL TABLET-
+	WebElement AddToCart = driver.findElement(By.xpath("//*[@href='/medicare/cart/add/1/product']"));
+	AddToCart.click();
+
+	WebElement Checkout = driver.findElement(By.xpath("//a[@class='btn btn-success btn-block']"));
+	Checkout.click();
+	
+	WebElement ContinueShopping = driver.findElement(By.xpath("//a[@class='btn btn-warning']"));
+	ContinueShopping.click();
+	
+	
+	//COMBIFLAME TAB -
+	WebElement AddToCart2 = driver.findElement(By.xpath("//*[@href='/medicare/cart/add/2/product']"));
+	AddToCart2.click();
+	
+	WebElement Checkout2 = driver.findElement(By.xpath("//a[@class='btn btn-success btn-block']"));
+	Checkout2.click();
+	
+	WebElement ContinueShopping2 = driver.findElement(By.xpath("//a[@class='btn btn-warning']"));
+	ContinueShopping2.click();
+	
+	
+	// To perform scroll on application -
+	JavascriptExecutor js = (JavascriptExecutor) driver;    
+	js.executeScript("window.scrollBy(0,350)" ,"");             //(scroll down by 350 pixel)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//a[@class="btn btn-success btn-block"]
+
+}
+ 
+    
+}
+    
+	
+	
+	/*@AfterMethod
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.quit();*/
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                  
+                   
+	
+	
+	
+	
+

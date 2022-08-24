@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33935" started-at="2022-08-24T13:44:16 IST" finished-at="2022-08-24T13:44:50 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33935" started-at="2022-08-24T13:44:16 IST" finished-at="2022-08-24T13:44:50 IST">
+      <class name="healthcareDomain2.MEDICARE">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:healthcareDomain2.MEDICARE@a4ca3f6]" name="openBrowser" is-config="true" duration-ms="3435" started-at="2022-08-24T13:44:16 IST" finished-at="2022-08-24T13:44:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="Login()[pri:1, instance:healthcareDomain2.MEDICARE@a4ca3f6]" name="Login" duration-ms="12997" started-at="2022-08-24T13:44:19 IST" finished-at="2022-08-24T13:44:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:healthcareDomain2.MEDICARE@a4ca3f6]" name="openBrowser" is-config="true" duration-ms="464" started-at="2022-08-24T13:44:32 IST" finished-at="2022-08-24T13:44:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="PARACETAMOL()[pri:0, instance:healthcareDomain2.MEDICARE@a4ca3f6]" name="PARACETAMOL" duration-ms="16923" started-at="2022-08-24T13:44:33 IST" depends-on-methods="healthcareDomain2.MEDICARE.Login" finished-at="2022-08-24T13:44:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PARACETAMOL -->
+      </class> <!-- healthcareDomain2.MEDICARE -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

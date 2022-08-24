@@ -1,0 +1,57 @@
+package healthCareDomain;
+
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import javax.swing.text.View;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class Medicare {
+	WebDriver driver = new FirefoxDriver();
+	
+	
+	@BeforeMethod
+	public void openBrowser()
+	
+	{
+		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+		 driver.get("http://localhost:8085/medicare/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();	
+		
+	}
+	
+	@Test
+	public void combiflame() throws InterruptedException {
+		
+		Thread.sleep(5000);
+		
+		WebElement ViewBtn = driver.findElement(By.id("//*[@id='listProducts']")); 
+		ViewBtn.click();
+
+		
+		WebElement Search	= driver.findElement(By.xpath("//input[@type='search']"));
+		Search.sendKeys("combiflame");
+		Search.sendKeys(Keys.ENTER);
+		
+		
+		
+		
+		
+	
+
+	
+	
+	
+	
+	
+	}
+	}

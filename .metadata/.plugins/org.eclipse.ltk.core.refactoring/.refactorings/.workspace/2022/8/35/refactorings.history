@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="true" description="Delete 10 resources" element1="/flyaway-biz-api" element10="/flyaway-repo-api" element2="/flyaway-ctl" element3="/flyaway-domain" element4="/flyaway" element5="/flyaway-repo-provider" element6="/flyaway-manager-provider" element7="/flyaway-biz-provider" element8="/flyaway-commons" element9="/flyaway-manager-api" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1661056855958"/>
+</session>
