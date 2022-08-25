@@ -30,13 +30,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.simplilearn.flyaway"/>
 		</list>
 		<list key="groupId">
-			<item value="com.simplilearn"/>
 		</list>
 		<list key="artifactId">
-			<item value="flyaway"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

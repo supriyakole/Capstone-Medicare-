@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;medicareproject2&apos;&#x0D;&#x0A;- Original project: &apos;medicareproject2&apos;&#x0D;&#x0A;- Original element: &apos;medicareproject2/src/test/java/com.simplilearn.com.medicareproject2&apos;" description="Delete element" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.simplilearn.com.medicareproject2" element2="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.simplilearn.com" element3="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.simplilearn" element4="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1661416439857" subPackages="false" version="1.0"/>
+</session>

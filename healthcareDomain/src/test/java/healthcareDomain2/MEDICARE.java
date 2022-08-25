@@ -193,7 +193,7 @@ public void COMBIFLAME() throws InterruptedException {
 	/*WebElement ContinueShopping2 = driver.findElement(By.xpath("//a[@class='btn btn-warning']"));
 	ContinueShopping2.click();*/
 	
-	
+	@AfterMethod
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.quit();
