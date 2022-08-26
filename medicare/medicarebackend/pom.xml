@@ -5,7 +5,7 @@
 	<groupId>net.fsd</groupId>
 	<artifactId>medicarebackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>medicarebackend</name>
 	<url>http://maven.apache.org</url>
